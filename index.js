@@ -198,19 +198,19 @@ document.addEventListener("keydown", (event) => {
   const { x, y } = ball.velocity;
   console.log(x, y);
   if (event.keyCode === 38) {
-    Body.setVelocity(ball, { x, y: y - 5 });
+    Body.setVelocity(ball, { x, y: y - 1 });
   }
 
   if (event.keyCode === 39) {
-    Body.setVelocity(ball, { x: x + 5, y });
+    Body.setVelocity(ball, { x: x + 1, y });
   }
 
   if (event.keyCode === 40) {
-    Body.setVelocity(ball, { x, y: y + 5 });
+    Body.setVelocity(ball, { x, y: y + 1 });
   }
 
   if (event.keyCode === 37) {
-    Body.setVelocity(ball, { x: x - 5, y });
+    Body.setVelocity(ball, { x: x - 1, y });
   }
 });
 
